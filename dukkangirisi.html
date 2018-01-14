@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Dükkan Giriş</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background:#fbfbfb
+}
+.login { 
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 {     color: #5d5d5d;
+    letter-spacing: 1px;
+    text-align: center; }
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: white;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+ 	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+ 
+	transition: box-shadow .5s ease;
+}
+input:focus { 
+color:black;
+ }
+
+    #nasi {
+		    font-family: calibri;
+    color: black;
+    margin-top: 7px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    float: right;
+}
+ #nasi a {
+		    font-family: calibri;
+    color: #4e4e4e;
+     text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    float: right;
+}
+  h14{
+	font-size: 12px;
+    color: #484848;
+    line-height: 45px;}
+ h666{
+	 color:#3b5998;
+	    font-size: 27px;
+    letter-spacing: 0px;
+    vertical-align: -6px;
+    text-indent: 1px;}
+	 h777{
+	 color:#1da1f2;
+	    font-size: 27px;
+    letter-spacing: 0px;
+    vertical-align: -6px;
+    text-indent: 1px;}
+	 h888{
+	 color:#d24b4b;
+	    font-size: 27px;
+    letter-spacing: 0px;
+    vertical-align: -6px;
+    text-indent: 1px;}
+	*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+ h444{
+	 color:#ff6508;
+	 text-decoration:underline;
+	 font-family:verdana;
+	 font-size:11px;}
+body{
+	margin:0 auto;
+	background:#fff
+}
+h123{
+ 	padding:7px;
+	padding-left:12px;
+	padding-right:12px;
+	border-radius:10px;}
+	h124{
+	    padding: 3px;
+    padding-left: 9px;
+    margin-left: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.43);
+    border-radius: 5px;
+    padding-right: 9px;
+    
+    
+} 
+h124:hover{
+	cursor:pointer;
+	background:orange;
+	color:#fff;
+	transition: background-color 0.7s ease;}
+	h124 a:hover{
+		text-decoration:none;
+			color:#fff;
+}
+ @media only screen and (max-width: 510px) {
+h124 {
+     display:none;
+    }
+}
+#ust{
+	
+ 	-webkit-box-sizing: content-box;
+	}
+	
+#head {
+	      width: 100%;
+    margin: auto;
+    background-image: linear-gradient(rgb(65, 77, 171), rgb(61, 86, 174));
+    height: 50px;
+    -webkit-box-sizing: content-box;
+    border-bottom: 1px solid rgba(218, 218, 218, 0.45);
+
+}
+#headicc {
+	max-width:1030px;
+	margin:auto;
+	line-height:50px;
+		background:blue;
+
+}
+#sol {
+	float:left;
+	    font-size: 16px;
+ 			font-family:poppins;
+			color: #ffffff;
+			padding-left:15px;
+			padding-right:15px;
+
+}
+  @media only screen and (min-width: 500px) {
+#sol {
+	    font-size: 21px;
+    font-family: poppins;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 100%;
+
+}}
+#sag {
+	float:right;
+ 			font-family:poppins;
+			color: #fff;
+			padding-left:15px;
+			padding-right:15px;
+			font-size: 13px;
+
+}
+#sag a {
+  			 
+			color: #fff;
+			text-decoration:none
+			 
+
+}
+ @media only screen and (max-width: 406px) {
+#sag {
+	float:right;
+ 			font-family:poppins;
+			color:#fff;
+			padding-left:15px;
+			padding-right:15px;
+			font-size: 10px;
+
+}}
+ 
+#ne{
+	    color: black;
+    font-family: poppins;
+    padding-top: 40px;
+    text-align: center;
+	}
+			 @media only screen and (max-width: 500px) {
+#ne {
+color:black;
+	font-family:poppins;
+	padding-top:0px;
+	text-align:center;
+	font-size:14px;
+    }
+}
+	
+	@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+ 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+h2.title{
+  color: #6cc551;
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.container{
+  width: 1040px;
+  margin: auto;
+}
+
+div.images {
+  margin: 5px;
+  border: 1px solid #CCC;
+  float: left;
+  width: 250px;
+  
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=134, Strength=3);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+div.images:hover{
+ 
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#999, Direction=134, Strength=3);
+}
+
+div.images:hover .description{
+  color: #2d2d2d;
+}
+
+div.images img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+p.description {
+  color:  #252525;
+  font-family:arial;
+  padding: 10px;
+  text-align: center;
+}
+
+div.clear{
+  clear: both;
+}
+
+p.information{
+  color: #888;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1045px){
+  div.container{
+    width: 780px;
+  }
+}
+
+@media screen and (max-width: 785px){
+  div.container{
+    width: 560px;
+  }
+  
+  div.images{
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  div.container{
+    width: 407px;
+  }
+  
+  div.images{
+    margin: 10px 5px;
+    width: 189px;
+  }
+}
+
+@media screen and (max-width: 405px){
+  div.container{
+    width: 280px;
+  }
+  
+  div.images{
+    width: 280px;
+  }
+}
+#footer {
+	width: 100%;	
+	max-width: 1030px;
+	margin: auto;
+		height:100px;
+
+ }
+#foot1 {
+	width:25%;
+ 	min-width:130px;
+	float:left;
+ 
+}
+ 
+ 
+ 
+      </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<div class="head" id="head">
+    <div class="headicc" id="headicc">
+      <div class="sol" id="sol"><a href="index.html"><strong>Tadilat</strong>Sepeti</a></div>
+      
+      
+    </div>
+  </div>
+  <div class="login">
+  <div align="center"><img src="tools kopyala.png" width="120" height="120">
+  </div>
+  <h1>Dükkan Girişi</h1>
+    <form method="post">
+    	<input type="text" name="u" placeholder="Kullanıcı Adı" required />
+        <input type="password" name="p" placeholder="Şifre" required />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Giriş Yap</button>
+    </form>
+    <div class="nasi" id="nasi"><a href="#">Şifremi unuttum</a></div>
+    
+</div>
+  
+      <script src="js/index.js"></script>
+
+</body>
+</html>
